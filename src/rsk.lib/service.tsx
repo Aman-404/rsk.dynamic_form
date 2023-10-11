@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const service = () => {
-  return (
-    <div>service</div>
-  )
+    return (
+        <div>service</div>
+    )
 }

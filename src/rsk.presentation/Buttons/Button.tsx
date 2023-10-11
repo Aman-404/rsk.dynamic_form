@@ -1,7 +1,25 @@
-import React from 'react'
+import React from "react";
 
-export const Button = () => {
-  return (
-    <div>Button</div>
-  )
+interface ButtonProps {
+    name: string;
+    onClick: string;
+    onSubmit: string;
+    disabled: boolean;
 }
+
+
+
+const Button = ({ name, onClick,  onSubmit, disabled }: ButtonProps) => {
+    return (
+        <button
+            disabled={disabled}
+            onClick={() => console.log(onClick)}
+            onSubmit={() => console.log(onSubmit)}
+        >
+            {name}
+        </button>
+    );
+
+};
+
+export default Button;
