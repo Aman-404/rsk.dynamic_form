@@ -2,19 +2,18 @@ import React from "react";
 
 interface ButtonProps {
     name: string;
-    onClick: string;
-    onSubmit: string;
+    onClick: () => void; 
     disabled: boolean;
 }
 
 
 
-const Button = ({ name, onClick,  onSubmit, disabled }: ButtonProps) => {
+const Button = ({ name, onClick,  disabled }: ButtonProps) => {
     return (
         <button
-            disabled={disabled}
-            onClick={() => console.log(onClick)}
-            onSubmit={() => console.log(onSubmit)}
+        disabled={disabled}
+        onClick={onClick}
+        
         >
             {name}
         </button>
