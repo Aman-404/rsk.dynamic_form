@@ -3,11 +3,11 @@ import Button from "./Button";
 
 describe("Button Component", () => {
     const mockOnClick = jest.fn();
-    const mockOnSubmit = jest.fn();
+    // const mockOnSubmit = jest.fn();
     const defaultProps = {
         name: "Test Button",
         onClick: mockOnClick,
-        onSubmit: mockOnSubmit,
+        // onSubmit: mockOnSubmit,
         disabled: false,
     };
 

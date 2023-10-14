@@ -13,7 +13,6 @@ const Button = ({ name, onClick,  disabled }: ButtonProps) => {
         <button
         disabled={disabled}
         onClick={onClick}
-        
         >
             {name}
         </button>
