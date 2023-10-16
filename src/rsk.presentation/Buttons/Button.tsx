@@ -1,12 +1,9 @@
-import React from "react";
 
 interface ButtonProps {
     name: string;
     onClick: () => void; 
     disabled: boolean;
 }
-
-
 
 const Button = ({ name, onClick,  disabled }: ButtonProps) => {
     return (
